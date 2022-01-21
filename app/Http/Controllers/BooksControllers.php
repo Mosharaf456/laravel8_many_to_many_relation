@@ -98,7 +98,7 @@ class BooksControllers extends Controller
         // update book 4th
         $book->update(request(['name','description', 'isbn']));
 
-        // New Authors create using attach 5th
+        // New Authors create using attach  5th
         $authors = Author::find(request()->input('authors'));
         $book->authors()->attach(request('authors'));
 
